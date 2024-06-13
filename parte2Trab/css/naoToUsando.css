@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.header {
+    width: 70%;
+    height: 80px;
+    background-color: deepskyblue;
+    display: flex;
+    margin: 30px 0;
+    padding: 15px;
+    border-radius: 5px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .logo {
+    font-size: 30px;
+    font-weight: bold;
+    color: black;
+
+}
+
+.carrinho {
+    font-size: 30px;
+    width: 60px;
+    display: flex;
+    background-color: #fff;
+    justify-content: center;
+    border-radius: 3px;
+    align-items: center;
+    padding: 7px 10px;
+}
+
+.conteiner {
+    display: flex;
+    width: 70%;
+    margin-bottom: 30px;
+}
+
+.linhaProduto {
+    display: grid;
+    width: 60px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+
+}
+
+.corpoProduto {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 15px;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 14px;
+}
+
+.imgProduto {
+    width: 100%;
+    height: 190px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.produtoMiniatura {
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.titulo {
+    width: 100%;
+    height: 100px;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    margin-top: 5px;
+    flex-direction: column;
+}
+
+h2 {
+    font-size: 20px;
+    color: rgb(96, 196, 14);
+}
+
+.botao {
+    background-color: rgb(0, 92, 150);
+    width: 100%;
+    border-radius: 5px;
+    position: relative;
+    padding: 7px 25px;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+
+}
+
+.botao:hover {
+    background-color: rgb(0, 131, 212);
+
+}
+
+.rodape {
+    width: 100%;
+    height: 30%;
+    background-color: rgb(5, 5, 168);
+    margin-bottom: 0;
+}
+
+.botaoContato {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: #fff;
+    background-color: rgb(5, 5, 168);
+    border: none;
+    cursor: pointer;
+}
+
+.botaoContato:hover {
+    background-color: rgb(0, 131, 212);
+}
+
+.informacaoContato{
+    font-size: 14px;
+    font-weight: bold;
+    color: rgb(4, 34, 52);
+    margin-top: 5px;
+    flex-direction: column;
+    line-height: 1.5;
+}
