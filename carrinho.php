@@ -8,7 +8,7 @@
 
     <title>Seu Carrinho | Level1</title>
     <style>
-        body{
+        body {
             display: flex;
             align-items: center;
             justify-content: center;
@@ -16,7 +16,9 @@
             background-image: url('nuvens-de-estilo-anime.jpg');
             background-size: cover;
             background-repeat: no-repeat;
-            background-position: center -80px;        }
+            background-position: center -80px;
+        }
+
         .voltarLoja {
             position: absolute;
             top: 500px;
@@ -29,23 +31,35 @@
             max-height: 100px;
             border-radius: 45%;
         }
-        h3{
+
+        h3 {
             color: red;
             text-decoration: none;
             margin-top: -5px;
-            
+
         }
-        a{
+
+        a {
             text-decoration: none;
 
         }
-        .total{
+
+        .total {
             font-size: 30px;
             width: 20%;
             border-radius: 40px;
             text-align: center;
             background-color: chartreuse;
         }
+
+        .comprar {
+            max-width: 15rem;
+        }
+        .comprar:hover {
+    background-color: rgba(75, 193, 116, 0.487);
+    transition: ease 0.5s;
+    border-radius: 50%;
+}
 
     </style>
 </head>
@@ -56,6 +70,7 @@
 
 </html>
 <?php
+session_start();
 include_once ('config.php');
 
 // Verificar se um produto foi adicionado ao carrinho
@@ -125,9 +140,9 @@ if ($resultado->num_rows > 0) {
 
 
         echo "<tr>";
-            echo"<td>" . $linha['nome_produto'] . "</td>";
-            echo"<td>R$: " . $linha['preco'] . "</td>";
-            echo"<td>" . $linha['quantidade'] . "</td>";
+        echo "<td>" . $linha['nome_produto'] . "</td>";
+        echo "<td>R$: " . $linha['preco'] . "</td>";
+        echo "<td>" . $linha['quantidade'] . "</td>";
 
         echo "<td>
             <a class='btn btn-sm btn-danger' href='excluirCarrinho.php?id=$linha[id_carrinho]'>
@@ -142,7 +157,7 @@ if ($resultado->num_rows > 0) {
     // Exibir o total
     echo "<div class='total'> <b>Total R$: $total</b>    </div>";
     echo "<form method='POST' action='comprar.php'>
-    <button type='submit' class='btn btn-success comprar'>Comprar</button>
+        <input type='image' src='botaocomprar.png' alt='Comprar' class='comprar'>
     </form>";
 } else {
     echo "O carrinho está vazio.<br>";
@@ -154,17 +169,20 @@ $conexao->close();
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
 </body>
 <div class="voltarLoja">
-        <a href="lojaLevel1.php">
-            <img src="carrinhoVoltar.gif" alt="gif" class="carrinhoVoltar">
-            <h3>Voltar</h3>
-        </a>
-    </div>
+    <a href="lojaLevel1.php">
+        <img src="carrinhoVoltar.gif" alt="gif" class="carrinhoVoltar">
+        <h3>Voltar</h3>
+    </a>
+</div>
+
 </html>
