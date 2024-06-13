@@ -73,7 +73,7 @@
 
                 <a class="button" href="formularioLogin.php">Login</a>
                 <a href="formularioCadastro.php">
-                    <img src="Assets\img\nuvemHome.gif" alt="gif">
+                    <img src="nuvemHome.gif" alt="gif">
                 </a>
                 <a class="button" href="formularioCadastro.php">Cadastre-se</a>
             </div>

@@ -1,0 +1,8 @@
+body{
+    background-color: aqua;
+}
+
+.produto-container{
+    border: 2px solid blue;
+    border-radius: 10px;
+}

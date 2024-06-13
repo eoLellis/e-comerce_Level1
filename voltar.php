@@ -41,7 +41,7 @@
     <div class="banner">
         <div class="banner-container">
             <a href="home.php">
-                <img src="Assets\img\nuvemHome.gif" alt="GIF" class="banner-img">
+                <img src="nuvemHome.gif" alt="GIF" class="banner-img">
                 <div class="voltar">Voltar</div>
 
             </a>

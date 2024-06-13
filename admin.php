@@ -113,7 +113,7 @@ $result = $conexao->query($sql);
         </div>
         <div class="voltarAdmin">
             <a href="formularioLogin.php">
-                <img src="Assets\img\caraCorrendo.gif" alt="gif">
+                <img src="img\caraCorrendo.gif" alt="gif">
                 <h3>Voltar</h3>
             </a>
         </div>
